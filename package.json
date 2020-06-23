@@ -1,0 +1,8 @@
+{
+  "name": "eslint-config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "ssh://git@github.com/kobakazu0429/eslint-config.git",
+  "author": "kobakakzu0429 <kobakazu10@gmail.com>",
+  "license": "MIT"
+}
