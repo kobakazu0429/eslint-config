@@ -1,3 +1,3 @@
 module.exports = {
-  extends: "./index.js"
+  extends: ["airbnb", "./index.js"]
 }
