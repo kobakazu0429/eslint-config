@@ -20,3 +20,5 @@ module.exports = {
   },
 };
 ```
+
+FYI: [eslint-plugin-import で TypeScript の import 問題を解決する - Qiita](https://qiita.com/paranishian/items/334d0f2d87f487dc65d6)
