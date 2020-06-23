@@ -1,0 +1,19 @@
+{
+  "name": "@kobakazu0429/eslint-config",
+  "repository": "ssh://git@github.com/kobakazu0429/eslint-config.git",
+  "author": "kobakakzu0429 <kobakazu10@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "eslint": "7.2.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "lerna": "^3.22.1",
+    "prettier": "^2.0.5"
+  }
+}

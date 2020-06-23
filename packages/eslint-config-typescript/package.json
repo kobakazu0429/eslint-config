@@ -1,0 +1,19 @@
+{
+  "name": "@kobakazu0429/eslint-config-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "author": "kobakakzu0429 <kobakazu10@gmail.com>",
+  "homepage": "https://github.com/kobakazu0429/eslint-config",
+  "license": "ISC",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.4.0",
+    "@typescript-eslint/parser": "^3.4.0"
+  },
+  "peerDependencies": {
+    "typescript": "^3.9.5"
+  }
+}
