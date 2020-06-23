@@ -14,6 +14,9 @@ module.exports = {
     sourceType: "module"
   },
   plugins: ["prettier"],
+  settings: {
+    "import/extensions": [".js"]
+  },
   rules: {
     "prettier/prettier": "error",
     "no-console": "off",
