@@ -1,4 +1,4 @@
-const typescriptOptions = require("../eslint-config-typescript");
+const typescriptOptions = require("@kobakazu0429/eslint-config-typescript");
 
 module.exports = {
   ...typescriptOptions,
