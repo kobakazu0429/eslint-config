@@ -1,16 +1,35 @@
 # @kobakazu0429/eslint-config
 
+## Usage
+
+install eslint and create `.eslintrc.js`.
+
+```bash
+$ yarn add -D eslint
+$ touch .eslintrc.js
+$ code .eslintrc.js
+```
+
+add below codes.
+
+```javascript
+module.exports = {
+  extends: "@kobakazu0429/eslint-config-base",
+  // extends: "@kobakazu0429/eslint-config-typescript",
+  // extends: "@kobakazu0429/eslint-config-typescript-react",
+};
+```
+
 ## if using webpack
 
 ```bash
-$ yarn add -D eslint-import-resolver-webpack
+$ yarn add -D eslint-plugin-import eslint-import-resolver-webpack
 ```
 
 create `.eslintrc.js`
 
 ```javascript
 module.exports = {
-  extends: "@kobakazu0429/eslint-config-**",
   settings: {
     "import/resolver": {
       webpack: {
