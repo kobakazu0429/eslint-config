@@ -14,22 +14,9 @@ module.exports = {
     sourceType: "module"
   },
   plugins: ["prettier"],
-  settings: {
-    "import/extensions": [".js"]
-  },
   rules: {
     "prettier/prettier": "error",
     "no-console": "off",
-    "lines-between-class-members": "off",
-    "import/prefer-default-export": "off",
-    "import/extensions": [
-      "error",
-      {
-        js: "never",
-        jsx: "never",
-        ts: "never",
-        tsx: "never"
-      }
-    ]
+    "lines-between-class-members": "off"
   }
 };
