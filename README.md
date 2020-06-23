@@ -2,15 +2,19 @@
 
 ## Usage
 
-install eslint and create `.eslintrc.js`.
+1. install eslint and eslint-config
 
 ```bash
-$ yarn add -D eslint
-$ touch .eslintrc.js
-$ code .eslintrc.js
+yarn add -D eslint @kobakazu0429/eslint-config-base
+yarn add -D eslint @kobakazu0429/eslint-config-typescript
+yarn add -D eslint @kobakazu0429/eslint-config-typescript-react
 ```
 
-add below codes.
+2. create and edit `.eslintrc.js`.
+
+```bash
+$ touch .eslintrc.js
+```
 
 ```javascript
 module.exports = {
@@ -25,8 +29,6 @@ module.exports = {
 ```bash
 $ yarn add -D eslint-plugin-import eslint-import-resolver-webpack
 ```
-
-create `.eslintrc.js`
 
 ```javascript
 module.exports = {
