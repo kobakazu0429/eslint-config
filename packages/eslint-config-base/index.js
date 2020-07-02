@@ -17,6 +17,7 @@ module.exports = {
   rules: {
     "prettier/prettier": "error",
     "no-console": "off",
-    "lines-between-class-members": "off"
+    "lines-between-class-members": "off",
+    "no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }]
   }
 };
