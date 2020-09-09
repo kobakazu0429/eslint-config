@@ -14,6 +14,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "13.14.0"
-      - run: cd tests
       - run: yarn install
+        working-directory: tests
       - run: yarn lint
+        working-directory: tests
