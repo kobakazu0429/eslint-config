@@ -16,6 +16,10 @@ yarn add -D eslint @kobakazu0429/eslint-config-typescript-react
 $ touch .eslintrc.js
 ```
 
+```bash
+wget https://raw.githubusercontent.com/kobakazu0429/eslint-config/master/template.js -O .eslintrc.js
+```
+
 ```javascript
 module.exports = {
   extends: "@kobakazu0429/eslint-config-base",
