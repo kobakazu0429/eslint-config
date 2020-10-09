@@ -8,7 +8,7 @@
     "packages/*"
   ],
   "peerDependencies": {
-    "eslint": "7.10.0"
+    "eslint": "7.11.0"
   },
   "devDependencies": {
     "lerna": "3.22.1"
