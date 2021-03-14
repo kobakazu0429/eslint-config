@@ -28,6 +28,16 @@ module.exports = {
 };
 ```
 
+3. add `lint` command to scripts filed into `package.json`.
+
+```json
+{
+  "lint": "npm run lint:eslint && npm run lint:prettier",
+  "lint:eslint": "eslint \"{src,test}/**/*.{js,ts}\" --fix",
+  "lint:prettier": "prettier \"./{src,test}/**/*.{js,ts}\" --write"
+}
+```
+
 ## if using webpack
 
 ```bash

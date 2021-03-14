@@ -4,7 +4,6 @@ module.exports = {
   ...typescriptOptions,
   extends: [
     ...typescriptOptions.extends,
-    "prettier/react",
     "plugin:react/recommended",
   ],
   parserOptions: {
