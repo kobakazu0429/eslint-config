@@ -8,6 +8,7 @@
 yarn add -D eslint @kobakazu0429/eslint-config-base
 yarn add -D eslint @kobakazu0429/eslint-config-typescript
 yarn add -D eslint @kobakazu0429/eslint-config-typescript-react
+yarn add -D eslint @kobakazu0429/eslint-config-typescript-svelte
 ```
 
 2. create and edit `.eslintrc.js`.
