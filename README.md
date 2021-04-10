@@ -25,6 +25,7 @@ module.exports = {
   extends: "@kobakazu0429/eslint-config-base",
   // extends: "@kobakazu0429/eslint-config-typescript",
   // extends: "@kobakazu0429/eslint-config-typescript-react",
+  // extends: "@kobakazu0429/eslint-config-typescript-svelte",
 };
 ```
 
@@ -33,8 +34,8 @@ module.exports = {
 ```json
 {
   "lint": "npm run lint:eslint && npm run lint:prettier",
-  "lint:eslint": "eslint \"{src,test}/**/*.{js,ts}\" --fix",
-  "lint:prettier": "prettier \"./{src,test}/**/*.{js,ts}\" --write"
+  "lint:eslint": "eslint \"./{src,test}/**/*.{js,ts,tsx,svelte}\" --fix",
+  "lint:prettier": "prettier \"./{src,test}/**/*.{js,ts,tsx,svelte}\" --write"
 }
 ```
 

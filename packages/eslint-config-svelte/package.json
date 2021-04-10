@@ -1,0 +1,26 @@
+{
+  "name": "@kobakazu0429/eslint-config-svelte",
+  "version": "2.0.4",
+  "description": "",
+  "author": "kobakakzu0429 <kobakazu10@gmail.com>",
+  "homepage": "https://github.com/kobakazu0429/eslint-config",
+  "license": "ISC",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "typescript": "^3.9.5 || ^4.0.0"
+  },
+  "dependencies": {
+    "@kobakazu0429/eslint-config-typescript": "*",
+    "@typescript-eslint/eslint-plugin": "^4.0.0",
+    "@typescript-eslint/parser": "^4.0.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-svelte3": "^3.1.2",
+    "prettier": "^2.0.5",
+    "prettier-plugin-svelte": "^2.2.0"
+  }
+}
