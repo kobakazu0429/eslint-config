@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint --ext .js,.ts,.tsx ./src --fix"
+    "lint": "npm run lint:eslint && npm run lint:prettier",
+    "lint:eslint": "eslint \"./{src,test}/**/*.{js,ts,tsx}\" --fix",
+    "lint:prettier": "prettier \"./{src,test}/**/*.{js,ts,tsx}\" --write"
   },
   "devDependencies": {
     "@kobakazu0429/eslint-config-typescript-react": "*",
@@ -11,7 +13,7 @@
     "typescript": "*"
   },
   "dependencies": {
-    "@types/react": "^16.9.49",
-    "react": "^16.13.1"
+    "@types/react": "*",
+    "react": "*"
   }
 }
