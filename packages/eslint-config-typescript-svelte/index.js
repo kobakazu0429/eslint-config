@@ -6,6 +6,11 @@ module.exports = {
     "svelte3",
     ...typescriptOptions.plugins,
   ],
+  parserOptions: {
+    ...typescriptOptions.parserOptions,
+    tsconfigRootDir: __dirname,
+    project: ["./tsconfig.json"],
+  },
   settings: {
     "svelte3/typescript": require("typescript"),
   },
