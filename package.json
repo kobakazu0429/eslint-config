@@ -4,6 +4,9 @@
   "author": "kobakakzu0429 <kobakazu10@gmail.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "publish:patch": "lerna publish patch"
+  },
   "workspaces": [
     "packages/*"
   ],
