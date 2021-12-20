@@ -16,7 +16,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Setup NodeJs
-      - name: Setup .npmrc file for publish
         uses: actions/setup-node@v2
         with:
           node-version: "16.9.1"
@@ -28,18 +27,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: publish:major
-      - run: yarn publish:major
+        run: yarn publish:major
 
   publish_minor:
     if: github.event.inputs.semver == 'minor'
     runs-on: ubuntu-latest
     steps:
       - name: publish:minor
-      - run: yarn publish:minor
+        run: yarn publish:minor
 
   publish_patch:
     if: github.event.inputs.semver == 'patch'
     runs-on: ubuntu-latest
     steps:
       - name: publish:patch
-      - run: yarn publish:patch
+        run: yarn publish:patch
