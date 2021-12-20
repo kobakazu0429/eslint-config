@@ -5,7 +5,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "publish:patch": "lerna publish patch"
+    "publish:major": "lerna publish major --force-publish --yes",
+    "publish:minor": "lerna publish minor --force-publish --yes",
+    "publish:patch": "lerna publish patch --force-publish --yes"
   },
   "workspaces": [
     "packages/*"
