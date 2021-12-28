@@ -1,5 +1,5 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>kobakazu0429/renovate-config"],
-  "packageRules": [{ "matchPaths": ["package.json"] }]
+  "updateInternalDeps": true
 }
