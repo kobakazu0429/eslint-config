@@ -9,7 +9,7 @@ on:
         default: "patch"
 
 jobs:
-  prepare:
+  publish:
     runs-on: ubuntu-latest
     env:
       NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN_AUTOMATION }}
@@ -22,26 +22,14 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - run: yarn install
 
-  publish_major:
-    if: github.event.inputs.semver == 'major'
-    runs-on: ubuntu-latest
-    needs: prepare
-    steps:
-      - name: publish:major
+      - name: publish major
+        if: github.event.inputs.semver == 'major'
         run: yarn publish:major
 
-  publish_minor:
-    if: github.event.inputs.semver == 'minor'
-    runs-on: ubuntu-latest
-    needs: prepare
-    steps:
-      - name: publish:minor
+      - name: publish minor
+        if: github.event.inputs.semver == 'minor'
         run: yarn publish:minor
 
-  publish_patch:
-    if: github.event.inputs.semver == 'patch'
-    runs-on: ubuntu-latest
-    needs: prepare
-    steps:
-      - name: publish:patch
+      - name: publish patch
+        if: github.event.inputs.semver == 'patch'
         run: yarn publish:patch
