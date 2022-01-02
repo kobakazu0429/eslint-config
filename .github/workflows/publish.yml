@@ -25,13 +25,13 @@ jobs:
       - run: yarn install
 
       - name: publish major
-        if: github.event.inputs.semver == "major"
+        if: github.event.inputs.semver == 'major'
         run: yarn publish:major
 
       - name: publish minor
-        if: github.event.inputs.semver == "minor"
+        if: github.event.inputs.semver == 'minor'
         run: yarn publish:minor
 
       - name: publish patch
-        if: github.event.inputs.semver == "patch"
+        if: github.event.inputs.semver == 'patch'
         run: yarn publish:patch
