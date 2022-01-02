@@ -19,17 +19,19 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: "16.9.1"
-          registry-url: 'https://registry.npmjs.org'
+          registry-url: "https://registry.npmjs.org"
+          scope: "@kobakazu0429"
+          always-auth : true
       - run: yarn install
 
       - name: publish major
-        if: github.event.inputs.semver == 'major'
+        if: github.event.inputs.semver == "major"
         run: yarn publish:major
 
       - name: publish minor
-        if: github.event.inputs.semver == 'minor'
+        if: github.event.inputs.semver == "minor"
         run: yarn publish:minor
 
       - name: publish patch
-        if: github.event.inputs.semver == 'patch'
+        if: github.event.inputs.semver == "patch"
         run: yarn publish:patch
