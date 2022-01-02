@@ -25,6 +25,7 @@ jobs:
   publish_major:
     if: github.event.inputs.semver == 'major'
     runs-on: ubuntu-latest
+    needs: prepare
     steps:
       - name: publish:major
         run: yarn publish:major
@@ -32,6 +33,7 @@ jobs:
   publish_minor:
     if: github.event.inputs.semver == 'minor'
     runs-on: ubuntu-latest
+    needs: prepare
     steps:
       - name: publish:minor
         run: yarn publish:minor
@@ -39,6 +41,7 @@ jobs:
   publish_patch:
     if: github.event.inputs.semver == 'patch'
     runs-on: ubuntu-latest
+    needs: prepare
     steps:
       - name: publish:patch
         run: yarn publish:patch
