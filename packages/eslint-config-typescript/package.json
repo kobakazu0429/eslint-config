@@ -1,6 +1,6 @@
 {
   "name": "@kobakazu0429/eslint-config-typescript",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "",
   "author": "kobakakzu0429 <kobakazu10@gmail.com>",
   "homepage": "https://github.com/kobakazu0429/eslint-config",
@@ -13,7 +13,7 @@
     "typescript": "^3.9.5 || ^4.0.0"
   },
   "dependencies": {
-    "@kobakazu0429/eslint-config-base": "3.0.0",
+    "@kobakazu0429/eslint-config-base": "^3.0.1",
     "@typescript-eslint/eslint-plugin": "5.9.1",
     "@typescript-eslint/parser": "5.9.1",
     "eslint-config-airbnb-base": "15.0.0",
