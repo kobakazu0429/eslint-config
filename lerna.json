@@ -4,10 +4,5 @@
   "packages": [
     "packages/*"
   ],
-  "version": "3.0.2",
-  "command": {
-    "publish": {
-      "registry": "https://npm.pkg.github.com"
-    }
-  }
+  "version": "3.0.3"
 }
