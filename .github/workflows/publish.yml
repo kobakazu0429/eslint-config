@@ -21,19 +21,17 @@ jobs:
           node-version: "16.x"
           cache: yarn
           registry-url: "https://registry.npmjs.org"
-          scope: "@kobakazu0429"
-          always-auth : true
 
       - run: yarn install
 
       - name: publish major
         if: github.event.inputs.semver == 'major'
-        run: yarn publish:major
+        run: yarn publish:major --no-verify-access
 
       - name: publish minor
         if: github.event.inputs.semver == 'minor'
-        run: yarn publish:minor
+        run: yarn publish:minor --no-verify-access
 
       - name: publish patch
         if: github.event.inputs.semver == 'patch'
-        run: yarn publish:patch
+        run: yarn publish:patch --no-verify-access
