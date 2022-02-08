@@ -1,6 +1,6 @@
 {
   "name": "@kobakazu0429/eslint-config-typescript-react",
-  "version": "3.0.3",
+  "version": "3.0.5",
   "description": "",
   "author": "kobakakzu0429 <kobakazu10@gmail.com>",
   "homepage": "https://github.com/kobakazu0429/eslint-config",
@@ -13,7 +13,7 @@
     "typescript": "^3.9.5 || ^4.0.0"
   },
   "dependencies": {
-    "@kobakazu0429/eslint-config-typescript": "3.0.3",
+    "@kobakazu0429/eslint-config-typescript": "^3.0.5",
     "@typescript-eslint/eslint-plugin": "5.11.0",
     "@typescript-eslint/parser": "5.11.0",
     "eslint-config-airbnb": "19.0.4",
