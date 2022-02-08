@@ -18,7 +18,7 @@ jobs:
       - name: Setup NodeJs
         uses: actions/setup-node@v2
         with:
-          node-version: "16.9.1"
+          node-version: "16.x"
           cache: yarn
           registry-url: "https://registry.npmjs.org"
           scope: "@kobakazu0429"
@@ -37,18 +37,18 @@ jobs:
         run: yarn publish:major
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN_AUTOMATION }}
 
       - name: publish minor
         if: github.event.inputs.semver == 'minor'
         run: yarn publish:minor
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN_AUTOMATION }}
 
       - name: publish patch
         if: github.event.inputs.semver == 'patch'
         run: yarn publish:patch
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN_AUTOMATION }}
