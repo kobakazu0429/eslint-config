@@ -20,7 +20,7 @@
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-svelte3": "3.4.1",
-    "prettier": "2.6.1",
+    "prettier": "2.6.2",
     "prettier-plugin-svelte": "2.6.0"
   },
   "gitHead": "0f7059d612eab7de8efab26b8a55bfe4f0a2cfc3"
