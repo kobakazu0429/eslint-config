@@ -13,7 +13,7 @@
     "typescript": "^3.9.5 || ^4.0.0"
   },
   "dependencies": {
-    "@kobakazu0429/eslint-config-typescript": "^3.1.1",
+    "@kobakazu0429/eslint-config-typescript": "3.1.1",
     "@typescript-eslint/eslint-plugin": "5.20.0",
     "@typescript-eslint/parser": "5.20.0",
     "eslint-config-airbnb": "19.0.4",
