@@ -18,7 +18,7 @@
     "@typescript-eslint/parser": "5.30.7",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-prettier": "8.5.0",
-    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-prettier": "4.2.1",
     "prettier": "2.7.1"
   },
   "gitHead": "0f7059d612eab7de8efab26b8a55bfe4f0a2cfc3"
