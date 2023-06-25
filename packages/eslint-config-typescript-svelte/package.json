@@ -10,7 +10,7 @@
     "access": "public"
   },
   "peerDependencies": {
-    "typescript": "^3.9.5 || ^4.0.0"
+    "typescript": "^3.9.5 || ^4.0.0 || ^5.0.0"
   },
   "dependencies": {
     "@kobakazu0429/eslint-config-typescript": "^3.1.4",
