@@ -2,11 +2,11 @@ const typescriptOptions = require("@kobakazu0429/eslint-config-typescript");
 
 module.exports = {
   ...typescriptOptions,
-  plugins: [
-    ...typescriptOptions.plugins,
+  plugins: [...typescriptOptions.plugins, "prettier-plugin-svelte"],
+  extends: [
+    ...typescriptOptions.extends,
     "plugin:svelte/recommended",
     "plugin:svelte/prettier",
-    "prettier-plugin-svelte",
   ],
   parserOptions: {
     ...typescriptOptions.parserOptions,
