@@ -3,21 +3,25 @@ const typescriptOptions = require("@kobakazu0429/eslint-config-typescript");
 module.exports = {
   ...typescriptOptions,
   plugins: [
-    "svelte3",
     ...typescriptOptions.plugins,
+    "plugin:svelte/recommended",
+    "plugin:svelte/prettier",
+    "prettier-plugin-svelte",
   ],
   parserOptions: {
     ...typescriptOptions.parserOptions,
     tsconfigRootDir: __dirname,
     project: ["./tsconfig.json"],
-  },
-  settings: {
-    "svelte3/typescript": require("typescript"),
+    extraFileExtensions: [".svelte"], // This is a required setting in `@typescript-eslint/parser` v4.24.0.
   },
   overrides: [
     {
-      files: ["**/*.svelte"],
-      processor: "svelte3/svelte3",
+      files: ["*.svelte"],
+      parser: "svelte-eslint-parser",
+      // Parse the `<script>` in `.svelte` as TypeScript by adding the following configuration.
+      parserOptions: {
+        parser: "@typescript-eslint/parser",
+      },
     },
   ],
   rules: {
