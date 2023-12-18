@@ -16,6 +16,6 @@
     "eslint": "8.54.0"
   },
   "devDependencies": {
-    "lerna": "8.0.0"
+    "lerna": "8.0.1"
   }
 }
