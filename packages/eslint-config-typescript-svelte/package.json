@@ -21,7 +21,7 @@
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-prettier": "5.0.1",
     "eslint-plugin-svelte": "2.35.1",
-    "prettier": "3.2.2",
+    "prettier": "3.2.3",
     "prettier-plugin-svelte": "3.1.2"
   },
   "gitHead": "0f7059d612eab7de8efab26b8a55bfe4f0a2cfc3"
